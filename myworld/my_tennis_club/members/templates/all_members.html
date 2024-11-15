@@ -11,14 +11,9 @@
     <ul>
         {% for x in mymembers %}
         <li>
-            {{ x.firstname }} {{ x.lastname }}
+            <a href="details/{{ x.id }}">{{ x.firstname }} {{ x.lastname }}</a> 
         </li>
-        <li>
-            {{ x.phone }} 
-        </li>
-        <li>
-            {{ x.joined_date }}
-        </li>
+       
         {% endfor %}
     </ul>
 </body>
